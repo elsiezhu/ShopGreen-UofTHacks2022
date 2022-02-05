@@ -4,7 +4,7 @@ import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import './App.css';
 
 function App() {
-    const [test, setTest] = useState(0);
+    const [test, setTest] = useState("");
 
     useEffect(() => {
        console.log('fetch');
