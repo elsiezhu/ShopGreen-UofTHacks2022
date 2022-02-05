@@ -48,3 +48,12 @@ def read_csv_file(filename: str) -> list[data_processing_classes.Business]:
         for line in csv_reader:
             businesses.append(csv_to_datafile(line))
     return businesses
+
+
+def get_categories(filename: str) -> list[str]:
+    """Gets all the categories of the businesses."""
+    businesses = read_csv_file(filename)
+    categories = set()
+    for business in businesses:
+        categories.add(business.category)
+    return list(categories)
