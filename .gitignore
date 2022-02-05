@@ -136,3 +136,6 @@ dmypy.json
 node_modules/
 shopgreen/node_modules/
 shopgreen/node_modules/*
+
+# Credentials
+credentials.txt

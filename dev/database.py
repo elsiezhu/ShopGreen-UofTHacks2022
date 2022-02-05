@@ -10,11 +10,16 @@ This file is released under the MIT license.
 import mysql.connector
 # import data_processing
 
+with open('credentials.txt') as f:
+    credentials = []
+    for line in f:
+        credentials.append(line.strip())
+
 mydb = mysql.connector.connect(
-  host="[redacted]",
-  user="[redacted]",
-  password="[redacted]",
-  database="[redacted]"
+  host=credentials[0],
+  user=credentials[1],
+  password=credentials[2],
+  database=credentials[3]
 )
 
 mycursor = mydb.cursor()
@@ -33,7 +38,7 @@ mycursor = mydb.cursor()
 #                              business.hours['wednesday'], business.hours['thursday'],
 #                              business.hours['friday'], business.hours['saturday'], business.hours['sunday']))
 
-mycursor.execute("SELECT * FROM Businesses WHERE Category = 'Pets'")
+mycursor.execute("SELECT * FROM Businesses WHERE Category = 'Food'")
 
 # mycursor.execute("DROP TABLE Businesses")
 
