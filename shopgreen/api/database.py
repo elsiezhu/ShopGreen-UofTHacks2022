@@ -38,7 +38,7 @@ mycursor = mydb.cursor()
 #                              business.hours['wednesday'], business.hours['thursday'],
 #                              business.hours['friday'], business.hours['saturday'], business.hours['sunday']))
 
-mycursor.execute("SELECT * FROM Businesses WHERE Category = 'Food'")
+# mycursor.execute("SELECT * FROM Businesses WHERE Category = 'Food'")
 
 # mycursor.execute("DROP TABLE Businesses")
 
@@ -66,7 +66,7 @@ mycursor.execute("SELECT * FROM Businesses WHERE Category = 'Food'")
 
 # mydb.commit()
 
-myresult = mycursor.fetchall()
-
-for x in myresult:
-  print(x)
+# myresult = mycursor.fetchall()
+#
+# for x in myresult:
+#   print(x)
