@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import navbar from './components/navbar';
-import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import Navbar from './components/navbar';
+import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import './App.css';
 
 function App() {
@@ -21,10 +21,10 @@ function App() {
     // </div>
     <>
         <Router>
-            <navbar />
-            <Switch>
+            <Navbar />
+            <Routes>
                 <Route path={'/'} exact />
-            </Switch>
+            </Routes>
         </Router>
     </>
   );
