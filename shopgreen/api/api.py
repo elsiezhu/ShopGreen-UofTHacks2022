@@ -8,4 +8,4 @@ CORS(app)
 
 @app.route('/test')
 def test():
-    return {'test': 5 + 3 // 2}
+    return {'test': 'trucks r loud!!'}

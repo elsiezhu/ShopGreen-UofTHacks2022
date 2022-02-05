@@ -136,6 +136,7 @@ dmypy.json
 node_modules/
 shopgreen/node_modules/
 shopgreen/node_modules/*
+yarn.lock
 
 # Credentials
 credentials.txt
