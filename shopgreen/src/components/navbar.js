@@ -63,7 +63,7 @@ function Navbar() {
                     </ul>
                     {button && <Button buttonStyle={'btn--outline'}>
                         <Link to={'/categories'} className={'nav-button'} onClick={closeMobileMenu}>
-                            get started
+                            GET STARTED
                         </Link>
                     </Button>}
                 </div>
