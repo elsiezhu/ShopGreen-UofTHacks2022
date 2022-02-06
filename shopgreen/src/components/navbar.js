@@ -1,11 +1,27 @@
 import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
+import './navbar.css';
+import { Button } from './Button';
 
 function Navbar() {
     const [click, setClick] = useState(false);
+    const [button, setButton] = useState(true);
 
-    const handleClick = () => setClick(!click)
-    const closeMobileMenu = () => setClick(false)
+    const handleClick = () => setClick(!click);
+    const closeMobileMenu = () => setClick(false);
+
+    //display button depending on screen size
+    const showButton = () => {
+        if(window.innerWidth <= 960) {
+            setButton(false);
+        }
+        else {
+            setButton(true);
+        }
+    };
+
+    window.addEventListener('resize', showButton);
+
     return (
         <>
             <nav className={"navbar"}>
@@ -20,12 +36,27 @@ function Navbar() {
                     </div>
                     <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                         <li className={'nav-item'}>
-                            <Link to={'/'} className={'nav-links'} onClick={closeMobileMenu}>
-                                Home
+                            <Link to={'/about'} className={'nav-links'} onClick={closeMobileMenu}>
+                                About
+                            </Link>
+                        </li>
+                        <li className={'nav-item'}>
+                            <Link to={'/ourcause'} className={'nav-links'} onClick={closeMobileMenu}>
+                                Our Cause
+                            </Link>
+                        </li>
+                        <li className={'nav-item'}>
+                            <Link to={'/businesses'} className={'nav-links'} onClick={closeMobileMenu}>
+                                Businesses
+                            </Link>
+                        </li>
+                        <li className={'nav-item'}>
+                            <Link to={'/contact'} className={'nav-links'} onClick={closeMobileMenu}>
+                                Contact
                             </Link>
                         </li>
                     </ul>
-
+                    {button && <Button buttonStyle={'btn--outline'}>get started</Button>}
                 </div>
             </nav>
         </>
