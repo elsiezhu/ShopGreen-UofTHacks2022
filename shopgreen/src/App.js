@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Navbar from './components/navbar';
 import { BrowserRouter as Router, Routes, Route} from "react-router-dom";
 import './App.css';
+import Homepage from './components/pages/homepage'
+import Categories from "./components/pages/categories";
 
 function App() {
     const [test, setTest] = useState("");
@@ -23,7 +25,8 @@ function App() {
         <Router>
             <Navbar />
             <Routes>
-                <Route path={'/'} exact />
+                <Route path={'/'} exact component={Homepage}/>
+                <Route path={'/categories'} exact component={Categories}/>
             </Routes>
         </Router>
     </>
