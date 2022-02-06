@@ -1,0 +1,32 @@
+.text-container {
+    background: url("../../images/background_citygreens.jpg") center center/cover no-repeat;
+    background-position: 0rem -19rem;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: inset 0 0 0 62.5rem rgba(0, 0, 0, 0.2);
+    object-fit: contain;
+}
+
+.text-container > h1 {
+    color: #fff;
+    font-size: 6.25rem;
+    margin-top: 6.25rem;
+    margin-bottom: 1rem;
+}
+
+.text-container > h3 {
+    color: #fff;
+    font-size: 3rem;
+    margin-top: 6.25rem;
+}
+
+.text-container > p {
+    color: #fff;
+    font-size: 2rem;
+    margin: 1rem 2rem 2rem;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', Arial, sans-serif;
+}

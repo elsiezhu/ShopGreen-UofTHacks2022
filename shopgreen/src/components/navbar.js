@@ -50,11 +50,11 @@ function Navbar() {
                                 Our Cause
                             </Link>
                         </li>
-                        <li className={'nav-item'}>
-                            <Link to={'/businesses'} className={'nav-links'} onClick={closeMobileMenu}>
-                                Businesses
-                            </Link>
-                        </li>
+                        {/*<li className={'nav-item'}>*/}
+                        {/*    <Link to={'/businesses'} className={'nav-links'} onClick={closeMobileMenu}>*/}
+                        {/*        Businesses*/}
+                        {/*    </Link>*/}
+                        {/*</li>*/}
                         <li className={'nav-item'}>
                             <Link to={'/contact'} className={'nav-links'} onClick={closeMobileMenu}>
                                 Contact
