@@ -23,10 +23,9 @@ function App() {
     // </div>
     <>
         <Router>
-            <Navbar />
             <Routes>
-                <Route path={'/'} exact component={Homepage}/>
-                <Route path={'/categories'} exact component={Categories}/>
+                <Route path={'/'} element={<Homepage />}/>
+                <Route path={'/categories'} element={<Categories />}/>
             </Routes>
         </Router>
     </>

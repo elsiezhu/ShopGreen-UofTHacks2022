@@ -1,5 +1,6 @@
 import React from "react";
 import '../../App.css';
+import './categories.css';
 import Navbar from '../navbar';
 import {Button} from "../Button";
 

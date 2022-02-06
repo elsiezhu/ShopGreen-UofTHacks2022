@@ -24,7 +24,7 @@ mydb = mysql.connector.connect(
 
 mycursor = mydb.cursor()
 
-# data = data_processing.read_csv_file('Data/green-toronto-member-businesses.csv')
+# data = data_processing.read_csv_file('data/green-toronto-member-businesses.csv')
 # for business in data:
 #     query = """INSERT INTO Businesses (Name, Description,
 #             GreenCommitment, Street, Phone, Email,
